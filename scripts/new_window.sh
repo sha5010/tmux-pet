@@ -11,4 +11,4 @@ if ! which $pet_path > /dev/null 2>&1; then
     return
 fi
 
-tmux new-window tmux\ send-keys\ \-t\ $1\ \"\$\($pet_path\ search\)\"
+tmux popup -w100% -h50% -EB tmux\ send-keys\ \-t\ $1\ \"\$\($pet_path\ search\)\"
